@@ -136,30 +136,31 @@ while place_order:
             # 3. Check if the customer typed a number
             elif menu_selection.isdigit():
                 # Convert the menu selection to an integer
-
+                menu_selection = int(menu_selection)
 
                 # 4. Check if the menu selection is in the menu items
                 if int(menu_selection) in menu_items.keys():
                     # Store the item name as a variable
-               
+                    menu_item_name = [int(menu_category)]
 
                     # Ask the customer for the quantity of the menu item
-                    quantity = input("Type the quantity of the item.")
+        quantity = input("Type the quantity of the item.")
 
                     # Check if the quantity is a number, default to 1 if not
     if quantity.isdigit():
-
+        quantity = "1"
                     # Add the item name, price, and quantity to the order list
-
+choice_index = int(menu_selection)
+print("Thanks for your order! we'll have your" + menu_selection[choice_index])
 
                     # Tell the customer that their input isn't valid
-        print(f"{menu_selection} was not an option.")
+print(f"{menu_selection} was not an option.")
 
                 # Tell the customer they didn't select a menu option
-        print("You didn't select a number.")
-else:
+print("You didn't select a number.")
+
             # Tell the customer they didn't select a menu option
-        print(f"{menu_category} was not a menu option.")
+print(f"{menu_category} was not a menu option.")
     
         # Tell the customer they didn't select a number
 print("You didn't select a number.")
@@ -202,17 +203,32 @@ print("/nUsing for item in order:")
 for item in order:
     print(item)
     # 7. Store the dictionary items as variables
-
+[
+  {
+    "Item name": "string",
+    "Price": float,
+    "Quantity": int
+  },
+  {
+    "Item name": "string",
+    "Price": float,
+    "Quantity": int
+  },
+]
 
     # 8. Calculate the number of spaces for formatted printing
-
+print("-" * 50)
 
     # 9. Create space strings
 
 
     # 10. Print the item name, price, and quantity
-
+print["Item name": "string",
+    "Price": float,
+    "Quantity": int]
 
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
+order = [menu_items * quantity]
 # and print the prices.
+print (order)
